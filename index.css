@@ -196,6 +196,7 @@ main {
   margin-bottom: 25px;
 }
 
+.new-btn {display: none;}
 .btn {
   text-decoration: none;
   padding: 12px 25px;
