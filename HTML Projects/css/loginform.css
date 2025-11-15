@@ -1,0 +1,194 @@
+/* Import Google Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-page setup */
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111; /* fallback background */
+    overflow: hidden;
+}
+
+/* Full-screen animated background */
+.background-animation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 30% 30%, #ff416c, #ff4b2b, #ff9a00);
+    filter: blur(120px);
+    animation: animate-bg 15s linear infinite alternate;
+    z-index: -1; /* behind everything */
+}
+
+@keyframes animate-bg {
+    0% { transform: scale(1) translate(0,0); }
+    50% { transform: scale(1.2) translate(50px, -50px); }
+    100% { transform: scale(1) translate(0,0); }
+}
+
+/* Login form wrapper */
+.login-wrapper {
+    position: relative;
+    width: 380px;
+    z-index: 2;
+}
+
+/* Login box styling */
+.login-box {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+/* Heading */
+.login-box h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 8px #ff4b2b;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Subheading */
+.login-box p {
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease forwards;
+}
+
+.input-group img {
+    width: 35px;
+    margin-right: 10px;
+    opacity: 0.9;
+    transition: transform 0.3s;
+}
+
+/* Input fields */
+.input-group input {
+    flex: 1;
+    padding: 14px 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #ddd;
+}
+
+/* Input focus effect */
+.input-group input:focus {
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0 0 15px #ff4b2b;
+}
+
+/* Icon animation on focus */
+.input-group input:focus + img {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Forgot password link */
+.login-box a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #ff4b2b;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,65,108,0.5);
+}
+
+/* Footer text */
+.login-box h5 {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.login-box h5 a {
+    color: #ff4b2b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-box h5 a:hover {
+    color: #ff9a00;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* ===============================
+   EDUCATIONAL DISCLAIMER STYLE
+=============================== */
+.educational-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  background-color: transparent;
+  margin-top: 25px;
+  line-height: 1.5;
+  padding: 10px 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.educational-note strong {
+  color: #fff;
+}
