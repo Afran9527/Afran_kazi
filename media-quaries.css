@@ -75,16 +75,24 @@
     width: 100%;
     text-align: center;
   }
-.new-btn { display:block;
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-width:100%;
-text-align: center;
-color: #f8faf9;
-  border: 2px solid #f8faf9;}
+  .btn.secondary {
+    background-color: #f8faf9;
+    color: #2f362f;
+  }
+  .new-btn {
+    display: block;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    color: #2f362f;
+    background-color: #f8faf9;
+    border: 2px solid ;
+    border-radius: 8px;
+  }
   .social-links {
     display: flex;
     gap: 20px;
@@ -104,7 +112,9 @@ color: #f8faf9;
     gap: 20px;
   }
 
-  .projects-icons a { font-size: 1rem;}
+  .projects-icons a {
+    font-size: 1rem;
+  }
 
   .box {
     width: 200px;
@@ -255,7 +265,6 @@ color: #f8faf9;
    ========================================================= */
 /* =============== MOBILE MENU (991px) =============== */
 @media screen and (max-width: 991px) {
-
   .navigation-content {
     display: none;
   }
