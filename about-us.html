@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Afran Kazi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #F8FAF9;
+      color: #2F362F;
+      line-height: 1.7;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background-color: #2F362F;
+      color: #F8FAF9;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav{display: flex;
+    justify-content: space-evenly;
+align-items: center;
+}
+
+    .logo-content a   {text-decoration: none;
+color: #F8FAF9;}
+
+    /* ---------- MAIN CONTAINER ---------- */
+    .aboutus {
+      width: 1200px;
+      margin: 60px auto;
+      background-color: #D9D3C6;
+      border-radius: 12px;
+      padding: 60px 80px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .aboutus h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2F362F;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .aboutus h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #2F362F;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    .about-section {
+      margin-bottom: 60px;
+    }
+
+    .about-section h3 {
+      font-size: 1.8rem;
+      color: #2F362F;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.2rem;
+      color: #2F362F;
+    }
+
+    /* ---------- SERVICE BOXES ---------- */
+    .services {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .service-box {
+      background-color: #2F362F;
+      color: #F8FAF9;
+      border-radius: 10px;
+      width: 48%;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-8px);
+      background-color: #3a403a;
+    }
+
+    .service-box h4 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    /* ---------- STATS SECTION ---------- */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .stat {
+      background-color: #2F362F;
+      color: #F8FAF9;
+      padding: 30px 40px;
+      border-radius: 12px;
+      width: 30%;
+      transition: transform 0.3s ease;
+    }
+
+    .stat:hover {
+      transform: translateY(-10px);
+    }
+
+    .stat h3 {
+      font-size: 2.2rem;
+      color: #D9D3C6;
+    }
+
+    .stat p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #F8FAF9;
+    }
+
+    /* ---------- CALL TO ACTION ---------- */
+    .cta {
+      background-color: #2F362F;
+      color: #F8FAF9;
+      border-radius: 10px;
+      text-align: center;
+      padding: 50px 30px;
+      margin-top: 60px;
+    }
+
+    .cta h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      text-decoration: none;
+      color: #2F362F;
+      background-color: #D9D3C6;
+      padding: 14px 35px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #F8FAF9;
+      transform: translateY(-5px);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .aboutus {
+        width: 90%;
+        padding: 40px 25px;
+      }
+
+      .services {
+        flex-direction: column;
+      }
+
+      .service-box {
+        width: 100%;
+      }
+
+      .stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .stat {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav><div class="logo">
+                <div class="logo-content"><a href="index.html"><h3>Afran Kazi</h3></a></div>
+            </div>
+    About Us
+    </nav>
+  </header>
+
+  <main>
+    <section class="aboutus">
+      <h2>Who We Are</h2>
+      <div class="about-section">
+        <p>
+          At <b>Afran Kazi Creations</b>, we’re not just about building websites — we’re about building <b>experiences</b>.  
+          Every line of code and every design decision is made with a purpose: to create digital products that connect with people and deliver impact.  
+          What started as a personal curiosity for web development has evolved into a creative mission to combine design, technology, and storytelling.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h3>Our Mission & Vision</h3>
+        <p>
+          My mission is to craft visually engaging, responsive, and efficient web experiences.  
+          I believe in bringing brands and ideas to life through modern front-end development and user-centered design.  
+          The vision is simple — to keep learning, innovating, and growing while delivering work that speaks for itself.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h3>What I Offer</h3>
+        <div class="services">
+          <div class="service-box">
+            <h4>Front-End Development</h4>
+            <p>Creating responsive, modern, and user-friendly web interfaces using HTML, CSS, JavaScript, and React.</p>
+          </div>
+          <div class="service-box">
+            <h4>UI/UX Design</h4>
+            <p>Designing intuitive and visually appealing layouts that ensure smooth user experiences.</p>
+          </div>
+          <div class="service-box">
+            <h4>Graphic & Video Editing</h4>
+            <p>Adding creativity to visuals through Adobe Photoshop, Illustrator, and Premiere Pro.</p>
+          </div>
+          <div class="service-box">
+            <h4>Content Creation</h4>
+            <p>Creating visual stories and engaging designs for digital platforms and social media.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h3>My Work Philosophy</h3>
+        <p>
+          I believe great design comes from curiosity, structure, and creativity.  
+          Every project is an opportunity to grow, to explore, and to bring an idea to life.  
+          Consistency, focus, and passion are the pillars that define my approach to development and design.
+        </p>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+          <h3>3+</h3>
+          <p>Creative Tools Mastered</p>
+        </div>
+        <div class="stat">
+          <h3>100%</h3>
+          <p>Dedication & Effort</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <h3>Want to Work Together?</h3>
+        <a href="#contact">Let’s Connect</a>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

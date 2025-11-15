@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Afran Kazi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #F8FAF9;
+      color: #2F362F;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #2F362F;
+      color: #F8FAF9;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .logo-content a {
+      text-decoration: none;
+      color: #F8FAF9;
+    }
+
+    /* MAIN CONTAINER */
+    .contact-section {
+      width: 1200px;
+      margin: 60px auto;
+      background-color: #2F362F;
+      border-radius: 12px;
+      padding: 60px 80px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      color: #F8FAF9;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #F8FAF9;
+      position: relative;
+    }
+
+    .contact-section h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #D9D3C6;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* FORM STYLING */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #D9D3C6;
+    }
+
+    input, textarea {
+      background-color: #D9D3C6;
+      color: #2F362F;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      background-color: #F8FAF9;
+      box-shadow: 0 0 8px rgba(217, 211, 198, 0.8);
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    /* BUTTON */
+    .btn-submit {
+      width: 200px;
+      padding: 15px;
+      margin: 20px auto 0;
+      border-radius: 30px;
+      background-color: #D9D3C6;
+      color: #2F362F;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #F8FAF9;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* STATUS MESSAGE */
+    .status {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    .status.success {
+      color: #D9D3C6;
+    }
+
+    .status.error {
+      color: #ff8080;
+    }
+
+    /* CONTACT INFO SECTION */
+    .contact-info {
+      margin-top: 60px;
+      text-align: center;
+      color: #D9D3C6;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1.2rem;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #d9d3c6;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+      border-radius: 10px;
+      line-height: 1.5;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .contact-section {
+        width: 90%;
+        padding: 40px 25px;
+      }
+
+      .btn-submit {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="logo-content"><a href="index.html"><h3>Afran Kazi</h3></a></div>
+      </div>
+      Contact Us
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Get In Touch</h2>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Enter the subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+
+    <p id="statusMessage" class="status"></p>
+
+    <div class="contact-info">
+      <h3>Other Ways to Reach Me</h3>
+      <p><strong>📧 Email:</strong> afranqazi22@gmail.com</p>
+      <p><strong>📞 Phone:</strong> +91 95273 93519</p>
+      <p><strong>🌐 LinkedIn:</strong> linkedin.com/in/afran-kazi</p>
+    </div>
+
+    <!-- Disclaimer Section -->
+    <div class="disclaimer">
+      ⚠️ <strong>Disclaimer:</strong> This contact form is created for educational and portfolio demonstration purposes only.  
+      It does not store, share, or use any submitted data for commercial or fraudulent activities.  
+      All inputs are simulated for learning and showcasing web development skills.
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const statusMessage = document.getElementById("statusMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !subject || !message) {
+        statusMessage.textContent = "⚠️ Please fill in all fields.";
+        statusMessage.className = "status error";
+        return;
+      }
+
+      // Simulate sending (no actual backend connection)
+      setTimeout(() => {
+        statusMessage.textContent = "✅ Message sent successfully! I’ll get back to you soon.";
+        statusMessage.className = "status success";
+        form.reset();
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
