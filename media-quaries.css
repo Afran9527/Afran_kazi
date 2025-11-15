@@ -75,7 +75,16 @@
     width: 100%;
     text-align: center;
   }
-
+.new-btn { display:block;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+width:100%;
+text-align: center;
+color: #f8faf9;
+  border: 2px solid #f8faf9;}
   .social-links {
     display: flex;
     gap: 20px;
